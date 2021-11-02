@@ -20,7 +20,6 @@ header div *:nth-child(2) {
     margin: auto 25px;
     border-left: 1px solid darkgray;
     border-right: 1px solid darkgray;
-
 }
 
 #cartNumber {
@@ -35,7 +34,6 @@ header div *:nth-child(2) {
     left: -6px;
     top: -7px;
 }
-
 
 nav {
     margin-top: 8px;
@@ -57,7 +55,6 @@ nav {
     text-decoration: none;
     color: white;
     display: block;
-
 }
 
 .navLinksList li {
@@ -70,9 +67,7 @@ nav {
     background-color: #0551E7;
 }
 
-
 @media (max-width :930px) {
-
     .navbar div:first-child {
         border: none;
         display: flex;
@@ -82,40 +77,30 @@ nav {
         width: 100%;
         color: white;
     }
-
     .navbar div p {
         margin-left: 10px;
     }
-
     .navbar button {
         margin-right: 10px;
         color: white;
         border: none;
         background-color: #0551E7;
     }
-
     #navMenu {
         width: 100%;
         text-align: center;
         display: none;
     }
-
     .navLinksList {
         flex-direction: column;
     }
-
     .navLinksList li a {
         padding: 1em 0 0 0;
     }
-
     .navLinksList li:last-of-type {
         padding-bottom: 1em;
     }
-
-
-
 }
-
 
 #blue {
     background-image: url('https://www.serversea.com/images/home/bnr-bg.jpg');
@@ -153,7 +138,9 @@ nav {
     font-size: x-large;
 }
 
+
 /* PC */
+
 @media (min-width :992px) {
     #dont-miss {
         width: 80%;
@@ -162,23 +149,19 @@ nav {
         left: 10%;
         padding-bottom: 15px;
     }
-
     #blue>div h1 {
         font-size: 60px;
         ;
     }
-
     #dont-miss div input[type=text] {
         margin-left: 12%;
         width: 70%;
         line-height: 70px;
     }
-
     #dont-miss div button {
         position: relative;
         right: 160px;
     }
-
     .cards {
         gap: 30px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -187,16 +170,13 @@ nav {
     .cards div img {
         width: 60%;
     }
-
     .why-cards {
         width: 80%;
     }
-
     .right-img {
         float: right;
         margin-left: auto;
     }
-
     .right-text {
         position: relative;
         left: 90px;
@@ -204,85 +184,69 @@ nav {
         margin-left: auto;
         background: linear-gradient(to right, rgba(246, 244, 244, 1) 0%, rgba(255, 255, 255, 0) 100%);
     }
-
     .left-text,
     .right-text {
         width: 500px;
         padding: 40px;
-
     }
-
     #t1 {
         margin: 8% auto;
     }
-
 }
 
+
 /* mob */
+
 @media (max-width :991px) {
     header {
         margin-bottom: 3em;
     }
-
     header div {
         margin-right: 0%;
     }
-
     header>img {
         width: 262px;
         height: auto;
     }
-
     .center-large {
         margin: 40px 40px 0px;
         font-size: large !important;
     }
-
     #blue {
         height: auto;
     }
-
     #blue>div h1 {
         font-size: 38px;
     }
-
     #blue>div h2 {
         font-size: 26px;
     }
-
     #dont-miss>span * {
         font-size: 1.5em;
     }
-
     #dont-miss span *:last-child {
         margin-left: 2px;
     }
-
     #dont-miss h3 {
         font-size: small;
     }
-
     #dont-miss span:nth-of-type(2) div * {
         font-size: small;
     }
-
     #dont-miss>div:nth-of-type(1) {
         display: inline;
     }
-
     #dont-miss div input[type=text] {
         line-height: 50px;
         margin-left: 3%;
         width: 80%;
     }
-
     #dont-miss div button {
         position: absolute;
         right: 7%;
         margin-top: 3px;
         padding: 18px !important;
     }
-
     form span {
         margin-top: 2%;
         display: flex;
@@ -290,100 +254,76 @@ nav {
         padding-bottom: 5%;
         width: 100%;
     }
-
     form span * {
         font-size: small;
     }
-
     .cards {
         grid-template-columns: 90%;
         /* grid-template-columns: 1fr 1fr 1fr; */
         margin: auto 1% !important;
         gap: 10px;
     }
-
     .cards div h4 {
         font-size: medium;
     }
-
     .left-text,
     .right-text {
         padding: 10px;
         max-width: 80%;
         /* margin-left: 10px; */
     }
-
     .cirle-img {
         width: 99px;
         padding: 40px;
         margin: auto 10px;
     }
-
     .right-text {
         left: 0px;
-
     }
-
     .right-img {
         margin: 0px;
     }
-
     .gurantee-box {
         margin: auto 10px !important;
         font-size: smaller;
         text-align: left;
     }
-
     .gurantee-box div h3 {
         margin: 0px;
         font-weight: lighter;
     }
-
     .gurantee-box div img {
         max-width: 80px;
         margin-right: 15px;
     }
-
     .services div img {
         max-width: 180px;
     }
-
     .services {
         margin: auto 15px !important;
         column-gap: 20px !important;
         row-gap: 10px !important;
     }
-
     #footer-search form input[type=text] {
         width: 30% !important;
         left: 17% !important;
     }
-
     #footer-search {
         padding: 20px 30px;
-
     }
-
     #footer-search form button {
         height: 60px;
         padding: 0px 20px;
         right: 34px;
         top: 46px;
-
-
     }
-
     #footer-buttons {
         margin-top: 4%;
     }
-
     #t1 {
         margin: 14% auto 8%;
     }
-
 }
-
-
 
 #footer-search {
     font-family: 'asap';
@@ -496,7 +436,6 @@ nav {
     margin-bottom: 2px;
 }
 
-
 .grey-clouds {
     font-family: 'asap';
     background: url('https://www.serversea.com/images/home/btm-bg.jpg');
@@ -516,7 +455,6 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 
 .gurantee-box div {
     color: white;
@@ -572,8 +510,6 @@ nav {
     margin-top: 80px;
 }
 
-
-
 #dont-miss {
     background: #eee url(https://www.serversea.com/images/home/search-bg.jpg) no-repeat top right;
     text-align: center;
@@ -590,7 +526,6 @@ nav {
 
 #dont-miss span:first-child * {
     margin-bottom: 8px;
-
 }
 
 #dont-miss span:first-child :last-child {
@@ -643,7 +578,6 @@ nav {
 
 #dont-miss div form span label:nth-child(2) {
     margin: auto 30px;
-
 }
 
 #dont-miss div form span {
@@ -691,7 +625,6 @@ nav {
     margin: 0px 0px 15px 0px
 }
 
-
 .cards div span h2 {
     font-size: 3em;
     font-family: 'asap';
@@ -705,10 +638,7 @@ nav {
 .why-cards {
     display: flex;
     font-family: 'asap';
-
-
     margin: 15px auto;
-
 }
 
 .why-cards p {

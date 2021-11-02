@@ -4,11 +4,10 @@
     box-sizing: border-box;
 }
 
-
 body {
     color: white;
     font-family: 'Open Sans', sans-serif;
-    background-color: #589ed9;
+    background-color: rgb(147, 206, 255);
     margin: 0 auto;
     position: absolute;
     top: 50%;
@@ -48,8 +47,7 @@ form input {
     border-bottom: 1px solid #ccc;
 }
 
-
-#pass{
+#pass {
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
 }
@@ -64,18 +62,17 @@ span {
     display: inline;
     margin: 0px;
     padding: 0px;
-    
 }
 
-span:nth-child(1){
-    width: 70%;    
+span:nth-child(1) {
+    width: 70%;
 }
 
-span:nth-child(2){
+span:nth-child(2) {
     width: 30%;
 }
 
-.credit{
+.credit {
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -95,7 +92,6 @@ form input[type=submit]:hover {
     background-color: #062a46;
     cursor: pointer;
 }
-
 
 p {
     font-size: 19px;
@@ -117,13 +113,13 @@ h1 {
     flex-direction: row;
     padding: 15px 0 10px 5px;
     margin: 0;
-    width: 100%;    
+    width: 100%;
 }
 
 #check {
     margin-top: 7px;
     position: absolute;
-    right: 75px;   
+    right: 75px;
 }
 
 .checkBoxText p {
@@ -132,7 +128,7 @@ h1 {
     text-align: center;
 }
 
-#InfoBox{
+#InfoBox {
     background-color: rgb(104, 101, 101);
     margin-top: 10px;
     padding: 8px;
@@ -142,7 +138,6 @@ h1 {
     opacity: 0;
 }
 
-#msg{
+#msg {
     color: white;
 }
-
