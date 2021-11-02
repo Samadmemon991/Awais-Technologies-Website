@@ -181,7 +181,11 @@ nav {
 
     .cards {
         gap: 30px;
-        grid-template-columns: 340px 340px 340px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .cards div img {
+        width: 60%;
     }
 
     .why-cards {
@@ -484,6 +488,7 @@ nav {
     text-decoration: none;
     color: darkgray !important;
 }
+
 #footer-cr p,
 #footer-cr a:hover {
     color: white;
@@ -692,19 +697,9 @@ nav {
     font-family: 'asap';
 }
 
-.yellow-div * {
-    color: #f58531;
-}
-
-.yellow-div p {
-    text-align: center;
-    display: block;
-    margin: 0px 0px 15px 0px;
-}
-
-.yellow-div i {
-    font-size: 25px;
-    margin-right: 10px;
+#yellow-btn {
+    background-color: #f58531 !important;
+    padding: 17px 20px;
 }
 
 .why-cards {
