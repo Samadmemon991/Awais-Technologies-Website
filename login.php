@@ -35,11 +35,15 @@ if ($conn->connect_error) {
 <body>
     <header>
         <div id="logo">
-            <img src="media/loginlogo.png" alt="logo">
+            <img src="images/logoa.png" style="margin-left: -60px" alt="logo">
         </div>
-        <h1>Welcome.</h1>
+
+
+
+        <h1>Welcome</h1>
     </header>
     <section>
+        <br>
         <form action="<?php $_PHP_SELF ?>" method="POST">
             <input type="text" placeholder="Username" name="user" required value="<?php if (isset($_COOKIE["user"])) {
                                                                                         echo $_COOKIE["user"];

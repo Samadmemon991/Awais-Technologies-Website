@@ -52,37 +52,27 @@ if(isset($_POST['signup'])){
 <body>
     <header>
         <div id="logo">
-            <img src="media/loginlogo.png" alt="logo">
+        <img src="images/logoa.png" style="margin-left: -60px" alt="logo">
         </div>
-        <h1>User Registration.</h1>
+        <h1>User Registration</h1>
     </header>
     <section>
         <form action="<?php $_PHP_SELF ?>" method="POST">
-
+            <br>
             <input type="text" placeholder="Username" name="user" id="top" required>
 
             <input type="email" placeholder="Email" name="email" required>
 
             <input type="password" placeholder="Password" name="pass" id="pass" required>
 
-            <div class="credit">
-                <span>
-                    <input type="tel" placeholder="Credit Card " name="credit" style="border-bottom-left-radius: 6px;" required>
-                </span>
-                <span>
-                    <input type="tel" placeholder="CVV " name="cvv" style="border-bottom-right-radius: 6px;" required>
-
-                </span>
-
-
-            </div>
+  
+                    <input type="tel" placeholder="Phone no " name="phone"
+                     style="border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;" required>
+             
 
             <br>
+            <br>
 
-            <div class="checkBoxText">
-                <input type="checkbox" name="adult" id="check" required/>
-                <p>I am over 18</p>
-            </div>
             <input type="submit" value="Sign up" name="signup">
         </form>
         <p>Already have an account?<a href="login.php" > Log in</a></p>
