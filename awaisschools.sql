@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 04, 2021 at 02:50 PM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.1
+-- Generation Time: Nov 05, 2021 at 11:37 AM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -60,6 +60,41 @@ CREATE TABLE `invoice` (
   `fees` int(10) NOT NULL,
   `invoiceDate` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `invoice`
+--
+
+INSERT INTO `invoice` (`invoiceId`, `firstName`, `lastName`, `grade`, `fees`, `invoiceDate`) VALUES
+(1, 'Unzilla', 'Memon', 8, 2000, '2021-11-23'),
+(2, 'jijjiwe', 'jdjdbd', 12, 1000, '2021-11-03'),
+(3, 'jijjiwe', 'jdjdbd', 12, 1000, '2021-11-03'),
+(4, 'Unzilla', 'Ali', 12, 2000, '2021-11-03'),
+(5, 'jijjiwe', 'jdjdbd', 12, 1000, '2021-11-03'),
+(6, 'njrjtr', 'rtnjtjnr', 2, 122, '2021-11-03'),
+(7, 'dndb', 'dbbdbd', 112, 0, '2021-11-04'),
+(8, 'Unzilla', 'Shaikh', 1, 2000, '2021-11-04'),
+(9, 'Unzilla', 'Shaikh', 1, 2000, '2021-11-04'),
+(10, 'Ali', 'jdjdbd', 2, 111, '2021-11-04'),
+(11, 'Ali', 'jdjdbd', 2, 111, '2021-11-04'),
+(12, 'Unzilla', 'Shaikh', 1, 2000, '2021-11-04'),
+(13, 'fbhfbh', 'jsjs', 12, 2000, '2021-11-04'),
+(14, 'fbhfbh', 'jsjs', 12, 2000, '2021-11-04'),
+(15, 'fbhfbh', 'jsjs', 12, 2000, '2021-11-04'),
+(16, 'fbhfbh', 'deevev', 12, 11, '2021-11-04'),
+(17, 'whshws', 'h2ww2hu2w', 4, 1000, '2021-11-04'),
+(18, 'whshws', 'h2ww2hu2w', 4, 1000, '2021-11-04'),
+(29, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
+(30, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
+(31, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
+(32, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
+(33, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
+(34, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
+(35, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
+(36, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
+(37, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
+(38, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
+(39, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04');
 
 -- --------------------------------------------------------
 
@@ -125,7 +160,7 @@ ALTER TABLE `classfees`
 -- Indexes for table `invoice`
 --
 ALTER TABLE `invoice`
-  ADD PRIMARY KEY (`invoiceId`) USING BTREE;
+  ADD PRIMARY KEY (`invoiceId`);
 
 --
 -- Indexes for table `student`
@@ -154,7 +189,7 @@ ALTER TABLE `classfees`
 -- AUTO_INCREMENT for table `invoice`
 --
 ALTER TABLE `invoice`
-  MODIFY `invoiceId` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `invoiceId` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT for table `student`
