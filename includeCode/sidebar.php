@@ -12,6 +12,10 @@
                           <i class="fa fa-users "></i> View Students
                       </a>
                       
+                      <a href="printChallan.php" class="list-group-item">
+                          <!-- <span class="badge">14</span> -->
+                          <i class="fa fa-file-text"></i> Generate Challan
+                      </a>
                
                     </div>
                 </div>

@@ -2,6 +2,8 @@
 $conn = new mysqli('localhost', 'root', '', 'awaisschools');
 $message = "";
 
+
+$query = "SELECT * FROM `student`";
 if (isset($_GET['grade1'])) {
     $query = "SELECT * FROM `student` WHERE `class`=1";
 }

@@ -130,7 +130,8 @@ nav {
 
 #blue>div button,
 #dont-miss div button,
-.cards div form>button {
+.cards div form>button,
+.cards div>button {
     background-color: #0C34E9;
     border: none;
     color: white;
