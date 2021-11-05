@@ -10,25 +10,24 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
+
+
 if(isset($_POST['signup'])){
-       $username = $_POST["user"];
-        $password = $_POST["pass"];
-        $email = $_POST["email"];
-        $credit = $_POST["credit"];
-        $cvv = $_POST["cvv"];
 
-
-        $query = "insert into users(username,password,email,credit,cvv) values('$username','$password','$email','$credit','$cvv')";
-        // echo ("SELECT * FROM users where username='$username' and password='$password'");
-        $result = mysqli_query($conn,$query);
-        
-        if($result){
-            header("Location:http://localhost/17SW109%20lab%2010%20task%201/17SW109%20lab%2010%20task%201/login.php");
-        }
-        else{
-            
+    $user=$_POST['user'];
+    $email=$_POST['email'];
+   $pass =$_POST['pass'];
+ 
+   $phone =$_POST['phone'];
+ 
+  
+    if($user!="" && $email!="" && $pass!="" && $phone!="" ){
+      $q="INSERT INTO userss VALUES('', '$user' ,  '$pass' , '$email', '$phone')";
+      $conn->query($q);
+      header("Location:login.php");
+    }else{
         echo "<script>alert('Some problem occurred, please try again.');</script>";
-
+ 
     }
         
 
@@ -49,6 +48,8 @@ if(isset($_POST['signup'])){
     <link rel="stylesheet" href="css/logInSignup.css">
 </head>
 
+
+
 <body>
     <header>
         <div id="logo">
@@ -61,9 +62,11 @@ if(isset($_POST['signup'])){
             <br>
             <input type="text" placeholder="Username" name="user" id="top" required>
 
+            <input type="password" placeholder="Password" name="pass" id="pass" required>
+
             <input type="email" placeholder="Email" name="email" required>
 
-            <input type="password" placeholder="Password" name="pass" id="pass" required>
+            
 
   
                     <input type="tel" placeholder="Phone no " name="phone"

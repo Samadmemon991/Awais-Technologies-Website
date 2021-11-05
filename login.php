@@ -77,7 +77,7 @@ if (isset($_POST['login'])) {
     } else {
         $username = $_POST["user"];
         $password = $_POST["pass"];
-        $result = mysqli_query($conn, "SELECT * FROM users where username='$username' and password='$password'");
+        $result = mysqli_query($conn, "SELECT * FROM userss where username='$username' and password='$password'");
 
         if (mysqli_num_rows($result) > 0) {
             $_SESSION["uname"] = $username;
