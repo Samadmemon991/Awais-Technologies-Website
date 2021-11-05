@@ -1,7 +1,8 @@
 <?php
 require_once 'dbcon.php';
 
-function getStudents($class, $conn){
+function getStudents($class, $conn)
+{
     $sql = "SELECT COUNT(`StudentId`) FROM `student` WHERE class=" . $class;
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
@@ -153,7 +154,7 @@ function getStudents($class, $conn){
             <span>
                 <p>Enrolled Students:</p>
                 <p>
-                    <?php getStudents(1, $conn);?>
+                    <?php getStudents(1, $conn); ?>
                 </p>
             </span>
             <span>
@@ -170,10 +171,11 @@ function getStudents($class, $conn){
                 <h2> 500</h2>
             </span>
             <p> PER MONTH</p>
-            <button style="padding: 15px 30px; margin-bottom: 15px;">Manage Class</button>
-            <div class="yellow-div">
-                <button id="yellow-btn">Generate challan</button>
-            </div>
+
+            <form  action="ViewStudents.php" method="get">
+            <button style="padding: 15px 30px; margin-bottom: 15px;" name="grade1" type="submit">Manage Class</button>
+            <button id="yellow-btn">Generate challan</button>
+            </form>
 
         </div>
 
@@ -184,7 +186,7 @@ function getStudents($class, $conn){
             <span>
                 <p>Enrolled Students:</p>
                 <p>
-                    <?php getStudents(2, $conn);?>
+                    <?php getStudents(2, $conn); ?>
                 </p>
             </span>
             <span>
@@ -201,10 +203,10 @@ function getStudents($class, $conn){
                 <h2> 500</h2>
             </span>
             <p> PER MONTH</p>
-            <button style="padding: 15px 30px; margin-bottom: 15px;">Manage Class</button>
-            <div class="yellow-div">
-                <button id="yellow-btn">Generate challan</button>
-            </div>
+            <form  action="ViewStudents.php" method="get">
+            <button style="padding: 15px 30px; margin-bottom: 15px;" name="grade2" type="submit">Manage Class</button>
+            <button id="yellow-btn">Generate challan</button>
+            </form>
 
         </div>
 
@@ -215,7 +217,7 @@ function getStudents($class, $conn){
             <span>
                 <p>Enrolled Students:</p>
                 <p>
-                    <?php getStudents(3, $conn);?>
+                    <?php getStudents(3, $conn); ?>
                 </p>
             </span>
             <span>
@@ -232,10 +234,10 @@ function getStudents($class, $conn){
                 <h2> 500</h2>
             </span>
             <p> PER MONTH</p>
-            <button style="padding: 15px 30px; margin-bottom: 15px;">Manage Class</button>
-            <div class="yellow-div">
-                <button id="yellow-btn">Generate challan</button>
-            </div>
+            <form  action="ViewStudents.php" method="get">
+            <button style="padding: 15px 30px; margin-bottom: 15px;" name="grade3" type="submit">Manage Class</button>
+            <button id="yellow-btn">Generate challan</button>
+            </form>
 
         </div>
 
@@ -246,7 +248,7 @@ function getStudents($class, $conn){
             <span>
                 <p>Enrolled Students:</p>
                 <p>
-                    <?php getStudents(4, $conn);?>
+                    <?php getStudents(4, $conn); ?>
                 </p>
             </span>
             <span>
@@ -263,10 +265,10 @@ function getStudents($class, $conn){
                 <h2> 500</h2>
             </span>
             <p> PER MONTH</p>
-            <button style="padding: 15px 30px; margin-bottom: 15px;">Manage Class</button>
-            <div class="yellow-div">
-                <button id="yellow-btn">Generate challan</button>
-            </div>
+            <form  action="ViewStudents.php" method="get">
+            <button style="padding: 15px 30px; margin-bottom: 15px;" name="grade4" type="submit">Manage Class</button>
+            <button id="yellow-btn">Generate challan</button>
+            </form>
 
         </div>
 
@@ -277,7 +279,7 @@ function getStudents($class, $conn){
             <span>
                 <p>Enrolled Students:</p>
                 <p>
-                    <?php getStudents(5, $conn);?>
+                    <?php getStudents(5, $conn); ?>
                 </p>
             </span>
             <span>
@@ -294,10 +296,10 @@ function getStudents($class, $conn){
                 <h2> 600</h2>
             </span>
             <p> PER MONTH</p>
-            <button style="padding: 15px 30px; margin-bottom: 15px;">Manage Class</button>
-            <div class="yellow-div">
-                <button id="yellow-btn">Generate challan</button>
-            </div>
+            <form  action="ViewStudents.php" method="get">
+            <button style="padding: 15px 30px; margin-bottom: 15px;" name="grade5" type="submit">Manage Class</button>
+            <button id="yellow-btn">Generate challan</button>
+            </form>
 
         </div>
 
@@ -308,7 +310,7 @@ function getStudents($class, $conn){
             <span>
                 <p>Enrolled Students:</p>
                 <p>
-                    <?php getStudents(6, $conn);?>
+                    <?php getStudents(6, $conn); ?>
                 </p>
             </span>
             <span>
@@ -325,10 +327,10 @@ function getStudents($class, $conn){
                 <h2> 600</h2>
             </span>
             <p> PER MONTH</p>
-            <button style="padding: 15px 30px; margin-bottom: 15px;">Manage Class</button>
-            <div class="yellow-div">
-                <button id="yellow-btn">Generate challan</button>
-            </div>
+            <form  action="ViewStudents.php" method="get">
+            <button style="padding: 15px 30px; margin-bottom: 15px;" name="grade6" type="submit">Manage Class</button>
+            <button id="yellow-btn">Generate challan</button>
+            </form>
 
         </div>
 
@@ -339,7 +341,7 @@ function getStudents($class, $conn){
             <span>
                 <p>Enrolled Students:</p>
                 <p>
-                    <?php getStudents(7, $conn);?>
+                    <?php getStudents(7, $conn); ?>
                 </p>
             </span>
             <span>
@@ -356,10 +358,10 @@ function getStudents($class, $conn){
                 <h2> 800</h2>
             </span>
             <p> PER MONTH</p>
-            <button style="padding: 15px 30px; margin-bottom: 15px;">Manage Class</button>
-            <div class="yellow-div">
-                <button id="yellow-btn">Generate challan</button>
-            </div>
+            <form  action="ViewStudents.php" method="get">
+            <button style="padding: 15px 30px; margin-bottom: 15px;" name="grade7" type="submit">Manage Class</button>
+            <button id="yellow-btn">Generate challan</button>
+            </form>
 
         </div>
 
@@ -370,7 +372,7 @@ function getStudents($class, $conn){
             <span>
                 <p>Enrolled Students:</p>
                 <p>
-                    <?php getStudents(8, $conn);?>
+                    <?php getStudents(8, $conn); ?>
                 </p>
             </span>
             <span>
@@ -387,10 +389,10 @@ function getStudents($class, $conn){
                 <h2> 800</h2>
             </span>
             <p> PER MONTH</p>
-            <button style="padding: 15px 30px; margin-bottom: 15px;">Manage Class</button>
-            <div class="yellow-div">
-                <button id="yellow-btn">Generate challan</button>
-            </div>
+            <form  action="ViewStudents.php" method="get">
+            <button style="padding: 15px 30px; margin-bottom: 15px;" name="grade8" type="submit">Manage Class</button>
+            <button id="yellow-btn">Generate challan</button>
+            </form>
 
         </div>
 

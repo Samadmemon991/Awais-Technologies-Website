@@ -130,7 +130,7 @@ nav {
 
 #blue>div button,
 #dont-miss div button,
-.cards div>button {
+.cards div form>button {
     background-color: #0C34E9;
     border: none;
     color: white;
@@ -139,6 +139,11 @@ nav {
     font-family: 'Open Sans', sans-serif;
     border-radius: 40px;
     margin-bottom: 3em;
+}
+
+.cards div form {
+    display: grid;
+    justify-items: center;
 }
 
 #blue>div {
