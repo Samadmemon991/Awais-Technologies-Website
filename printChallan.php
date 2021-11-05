@@ -13,12 +13,10 @@ class PDF extends FPDF
 
 	}
 }
-
-$con = mysql_connect("localhost","root","");
-mysql_select_db("awaisdatabase", $con);
-$result = mysql_query("select count(1) FROM invoice");
-$row = mysql_fetch_array($result);
-$total= $row[0];
+require_once 'dbcon.php';
+$result = $conn->query("select count(1) FROM invoice");
+$row = $result->fetch_assoc();
+$total= $row['count(1)'];
 ++$total;
 $invoicenumber = str_pad($total, 7, "0", STR_PAD_LEFT);
 
@@ -40,7 +38,7 @@ $pdf->AddPage();
 
 
 $studentPhp = array("Receipt"=>$invoicenumber,"Fees"=>$fees, "Bank"=>"Bank Alfalah", "Account"=>"0306-1006267237","Branch"=>"Ltd Branch Qasimabad","Issue Date"=>$dt,"Student Id"=>$id,
-"StudentName"=>$fname+$lname,"Class"=>$class,"DueDate"=>"","After due"=>"You have to pay 50 rupees","Cashier's Sign"=>"","Depositor Sign"=>"");
+"StudentName"=>$fname .$lname,"Class"=>$class,"DueDate"=>"","After due"=>"You have to pay 50 rupees","Cashier's Sign"=>"","Depositor Sign"=>"");
 
 
 $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
@@ -76,8 +74,7 @@ $pdf->Output();
 
 
 
-$conn = new mysqli("localhost", "root", "", "awaisdatabase");
-    // Check connection
+
     if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
     }
