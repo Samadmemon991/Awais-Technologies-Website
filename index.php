@@ -1,3 +1,14 @@
+<?php
+require_once 'dbcon.php';
+
+function getStudents($class, $conn){
+    $sql = "SELECT COUNT(`StudentId`) FROM `student` WHERE class=" . $class;
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc();
+    echo $row["COUNT(`StudentId`)"];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,10 +23,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400&display=swap" rel="stylesheet"> 
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Asap&family=Karla:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap" rel="stylesheet">
@@ -42,9 +52,9 @@
     <header>
         <img src="media/logo.png" width="130px">
         <div>
-
-            <p> <i class="fas fa-user"></i> Member Login</p>
-
+            <a href="login.php">
+                <p> <i class="fas fa-user"></i> Member Login</p>
+            </a>
         </div>
     </header>
 
@@ -142,7 +152,9 @@
             <h4>Grade 1</h4>
             <span>
                 <p>Enrolled Students:</p>
-                <p> 10</p>
+                <p>
+                    <?php getStudents(1, $conn);?>
+                </p>
             </span>
             <span>
                 <p>Total subjects:</p>
@@ -171,7 +183,9 @@
             <h4>Grade 2</h4>
             <span>
                 <p>Enrolled Students:</p>
-                <p> 10</p>
+                <p>
+                    <?php getStudents(2, $conn);?>
+                </p>
             </span>
             <span>
                 <p>Total subjects:</p>
@@ -200,7 +214,9 @@
             <h4>Grade 3</h4>
             <span>
                 <p>Enrolled Students:</p>
-                <p> 10</p>
+                <p>
+                    <?php getStudents(3, $conn);?>
+                </p>
             </span>
             <span>
                 <p>Total subjects:</p>
@@ -229,7 +245,9 @@
             <h4>Grade 4</h4>
             <span>
                 <p>Enrolled Students:</p>
-                <p> 10</p>
+                <p>
+                    <?php getStudents(4, $conn);?>
+                </p>
             </span>
             <span>
                 <p>Total subjects:</p>
@@ -258,7 +276,9 @@
             <h4>Grade 5</h4>
             <span>
                 <p>Enrolled Students:</p>
-                <p> 15</p>
+                <p>
+                    <?php getStudents(5, $conn);?>
+                </p>
             </span>
             <span>
                 <p>Total subjects:</p>
@@ -287,7 +307,9 @@
             <h4>Grade 6</h4>
             <span>
                 <p>Enrolled Students:</p>
-                <p> 10</p>
+                <p>
+                    <?php getStudents(6, $conn);?>
+                </p>
             </span>
             <span>
                 <p>Total subjects:</p>
@@ -316,7 +338,9 @@
             <h4>Grade 7</h4>
             <span>
                 <p>Enrolled Students:</p>
-                <p> 10</p>
+                <p>
+                    <?php getStudents(7, $conn);?>
+                </p>
             </span>
             <span>
                 <p>Total subjects:</p>
@@ -345,7 +369,9 @@
             <h4>Grade 8</h4>
             <span>
                 <p>Enrolled Students:</p>
-                <p> 10</p>
+                <p>
+                    <?php getStudents(8, $conn);?>
+                </p>
             </span>
             <span>
                 <p>Total subjects:</p>
