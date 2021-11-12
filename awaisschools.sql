@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2021 at 11:37 AM
+-- Generation Time: Nov 12, 2021 at 11:38 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -66,35 +66,9 @@ CREATE TABLE `invoice` (
 --
 
 INSERT INTO `invoice` (`invoiceId`, `firstName`, `lastName`, `grade`, `fees`, `invoiceDate`) VALUES
-(1, 'Unzilla', 'Memon', 8, 2000, '2021-11-23'),
-(2, 'jijjiwe', 'jdjdbd', 12, 1000, '2021-11-03'),
-(3, 'jijjiwe', 'jdjdbd', 12, 1000, '2021-11-03'),
-(4, 'Unzilla', 'Ali', 12, 2000, '2021-11-03'),
-(5, 'jijjiwe', 'jdjdbd', 12, 1000, '2021-11-03'),
-(6, 'njrjtr', 'rtnjtjnr', 2, 122, '2021-11-03'),
-(7, 'dndb', 'dbbdbd', 112, 0, '2021-11-04'),
-(8, 'Unzilla', 'Shaikh', 1, 2000, '2021-11-04'),
-(9, 'Unzilla', 'Shaikh', 1, 2000, '2021-11-04'),
-(10, 'Ali', 'jdjdbd', 2, 111, '2021-11-04'),
-(11, 'Ali', 'jdjdbd', 2, 111, '2021-11-04'),
-(12, 'Unzilla', 'Shaikh', 1, 2000, '2021-11-04'),
-(13, 'fbhfbh', 'jsjs', 12, 2000, '2021-11-04'),
-(14, 'fbhfbh', 'jsjs', 12, 2000, '2021-11-04'),
-(15, 'fbhfbh', 'jsjs', 12, 2000, '2021-11-04'),
-(16, 'fbhfbh', 'deevev', 12, 11, '2021-11-04'),
-(17, 'whshws', 'h2ww2hu2w', 4, 1000, '2021-11-04'),
-(18, 'whshws', 'h2ww2hu2w', 4, 1000, '2021-11-04'),
-(29, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
-(30, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
-(31, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
-(32, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
-(33, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
-(34, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
-(35, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
-(36, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
-(37, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
-(38, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04'),
-(39, 'jwnjwe', 'wnjnjde', 111, 2000, '2021-11-04');
+(40, 'asdas', 'das', 1, 464, '2021-11-05'),
+(41, 'asdas', 'das', 1, 464, '2021-11-05'),
+(42, 'asda', 'asda', 1, 464, '2021-11-05');
 
 -- --------------------------------------------------------
 
@@ -118,11 +92,15 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`StudentId`, `firstName`, `lastName`, `DoB`, `class`, `phone`, `address`, `DoA`) VALUES
-(45, 'Sairaa', 'Bano', '1999-02-19', 2, 3368633753, 'A-23, 3rd Floor, Building Manjhi Oreals, Alamdar Chowk, Qasimabad', '2021-11-03'),
-(51, 'Unzillla', 'Ali', '1999-02-19', 3, 3368633753, 'A-23, 3rd Floor, Building Manjhi Oreals, Alamdar Chowk, Qasimabad', '2021-11-04'),
-(52, 'Saira', 'Bano', '1999-02-19', 2, 3368633753, 'A-23, 3rd Floor, Building Manjhi Oreals, Alamdar Chowk, Qasimabad', '2021-11-04'),
-(53, 'Ali', 'Bell', '1998-02-19', 4, 3372828722, '3rd Floor, Building Manjhi Oreals, Alamdar Chowk, Qasimabad', '2021-11-04'),
-(54, 'Saira', 'Bano', '1999-02-19', 3, 3368633753, 'A-23, 3rd Floor, Building Manjhi Oreals, Alamdar Chowk, Qasimabad', '2021-11-04');
+(56, 'John', 'doe', '1992-03-20', 2, 4294967295, 'asdasdas', '2021-11-08'),
+(57, 'John', 'doe', '1992-03-20', 2, 123123, 'asdasdas', '2021-11-08'),
+(58, 'John', 'doe', '1992-03-20', 2, 123123, 'asdasdas', '2021-11-08'),
+(59, 'John', 'doe', '1992-03-20', 2, 123123, 'asdasdas', '2021-11-08'),
+(60, 'John', 'doe', '1992-03-20', 1, 123, 'asdasdas', '2021-11-08'),
+(61, 'John', 'doe', '1992-03-20', 1, 123, 'asdasdas', '2021-11-08'),
+(62, 'John', 'doe', '1992-03-20', 1, 123, 'asdasdas', '2021-11-08'),
+(63, 'John', 'doe', '1992-03-20', 1, 123, 'asdasdas', '2021-11-08'),
+(64, 'John', 'doe', '1992-03-20', 1, 123, 'asdasdas', '2021-11-08');
 
 -- --------------------------------------------------------
 
@@ -143,8 +121,7 @@ CREATE TABLE `userss` (
 --
 
 INSERT INTO `userss` (`id`, `username`, `password`, `email`, `phone`) VALUES
-(1, 'sairabano', '1234', 'noonarisaira@gmail.com', '03368633753'),
-(2, 'sairabano', '1234', 'ss@gmail.com', '23323');
+(1, 'asd', 'dsa', 'abc@xyz.com', '01234567890');
 
 --
 -- Indexes for dumped tables
@@ -189,19 +166,19 @@ ALTER TABLE `classfees`
 -- AUTO_INCREMENT for table `invoice`
 --
 ALTER TABLE `invoice`
-  MODIFY `invoiceId` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `invoiceId` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `StudentId` int(100) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `StudentId` int(100) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- AUTO_INCREMENT for table `userss`
 --
 ALTER TABLE `userss`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
